@@ -3,6 +3,7 @@
  */
 package challenges;
 
+import Insertion.MargeSort;
 import Insertion.Sort;
 
 
@@ -23,6 +24,11 @@ public class App  {
         Integer[] array = new Integer[]{8,4,23,42,16,15};
         Sort<Integer> insertionsort = new Sort<>();
         System.out.println(Arrays.toString(insertionsort.insertionSort(array)));
+
+        MargeSort mergeSort= new MargeSort();
+        System.out.println(Arrays.toString(mergeSort.mergeSort(array)));
+
+
     }
 
 
