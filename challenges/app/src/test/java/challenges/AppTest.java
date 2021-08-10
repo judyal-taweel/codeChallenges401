@@ -3,6 +3,7 @@
  */
 package challenges;
 
+import Insertion.MargeSort;
 import Insertion.Sort;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
@@ -19,5 +20,11 @@ class AppTest {
     public void testInsertionSort() {
         Sort integerSort = new Sort<>();
         assertArrayEquals(new Integer[]{5, 10, 15, 25, 30}, integerSort.insertionSort(integerArr));
+    }
+
+    @Test
+    public void testMergeSort() {
+        MargeSort mergeSort= new MargeSort();
+        assertArrayEquals(new Integer[]{5, 10, 15, 25, 30}, mergeSort.mergeSort(integerArr));
     }
 }
