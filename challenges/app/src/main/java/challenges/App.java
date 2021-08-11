@@ -4,6 +4,7 @@
 package challenges;
 
 import Insertion.MargeSort;
+import Insertion.QuickSort;
 import Insertion.Sort;
 
 
@@ -27,6 +28,12 @@ public class App  {
 
         MargeSort mergeSort= new MargeSort();
         System.out.println(Arrays.toString(mergeSort.mergeSort(array)));
+
+        QuickSort quickSort= new QuickSort();
+        int arr[] = {8,4,23,42,16,15};
+        System.out.println(Arrays.toString(quickSort.quickSort(arr, 0, arr.length - 1)));
+
+
 
 
     }
