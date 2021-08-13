@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="HashTable.AppTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2021-08-13T15:06:55" hostname="THINK1T" time="0.051">
+  <properties/>
+  <testcase name="testHashMap()" classname="HashTable.AppTest" time="0.045"/>
+  <testcase name="appHasAGreeting()" classname="HashTable.AppTest" time="0.004"/>
+  <system-out><![CDATA[The size is => 4
+The Sally allowance is => 400
+Delete Sally => 400
+The size is => 3
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
