@@ -4,7 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="441dcecf-b9c0-4138-b339-de07bed6733b" name="Default Changelist" comment="HashTable challenge30" />
+    <list default="true" id="441dcecf-b9c0-4138-b339-de07bed6733b" name="Default Changelist" comment="HashTable challenge31">
+      <change afterPath="$PROJECT_DIR$/CC31.PNG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hashmap-repeated-word.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -25,7 +29,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$/.." value="QuickSort" />
+        <entry key="$PROJECT_DIR$/.." value="main" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
@@ -39,17 +43,26 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\challenge401\codeChallenges401\HashTable" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\challenge401\codeChallenges401\HashTable" />
+    </key>
   </component>
   <component name="RunAnythingCache">
     <option name="myCommands">
       <command value="gradle test" />
     </option>
   </component>
-  <component name="RunManager" selected="Gradle.HashTable [test]">
+  <component name="RunManager" selected="Application.App">
     <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="HashTable.App" />
       <module name="HashTable.app.main" />
@@ -63,13 +76,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="class" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -133,6 +148,7 @@
       <option name="presentableId" value="Default" />
       <updated>1628863333937</updated>
       <workItem from="1628863335513" duration="4924000" />
+      <workItem from="1629032393995" duration="1902000" />
     </task>
     <task id="LOCAL-00001" summary="HashTable challenge30">
       <created>1628867702389</created>
@@ -141,7 +157,14 @@
       <option name="project" value="LOCAL" />
       <updated>1628867702390</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="HashTable challenge31">
+      <created>1629032623059</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1629032623059</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -157,9 +180,11 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="HashTable challenge30" />
-    <option name="LAST_COMMIT_MESSAGE" value="HashTable challenge30" />
+    <MESSAGE value="HashTable challenge31" />
+    <option name="LAST_COMMIT_MESSAGE" value="HashTable challenge31" />
   </component>
 </project>
