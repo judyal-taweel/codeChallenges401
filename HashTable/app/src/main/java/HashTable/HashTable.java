@@ -178,4 +178,21 @@ public class HashTable<K,V> {
         // key not found
         return null;
     }
+
+    public String repeatedWord(String target){
+        String repeatedResult = "";
+
+        String[] splitTarget = target.split(" ",-2);
+
+
+        for (int i = 0; i < splitTarget.length; i++) {
+
+            if(get((K) splitTarget[i]) != null || get((K) ((K) splitTarget[i]+",")) != null ){
+                repeatedResult = splitTarget[i];
+                break;
+            }
+            add(((K)splitTarget[i]), (V) splitTarget[i]);
+        }
+        return repeatedResult;
+    }
 }
