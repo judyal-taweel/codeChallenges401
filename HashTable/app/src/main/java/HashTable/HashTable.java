@@ -1,6 +1,12 @@
 package HashTable;
 
+import Tree.BinarySearchTree;
+import Tree.BinaryTree;
+import Tree.Node;
+import org.checkerframework.checker.units.qual.A;
+
 import java.util.ArrayList;
+import java.util.HashSet;
 import java.util.Objects;
 
 public class HashTable<K,V> {
@@ -194,5 +200,29 @@ public class HashTable<K,V> {
             add(((K)splitTarget[i]), (V) splitTarget[i]);
         }
         return repeatedResult;
+    }
+
+    public ArrayList treeIntersection(BinaryTree tree1, BinaryTree tree2){
+
+        ArrayList intersection = new ArrayList();
+
+        ArrayList set1 = setTreeToArray(tree1);
+        ArrayList set2 = setTreeToArray(tree2);
+
+        for(Object n : set1){
+            if(set2.contains(n)){
+                intersection.add(n);
+            }
+        }
+        return intersection;
+    }
+
+    public static ArrayList setTreeToArray(BinaryTree bt){
+        ArrayList nodeSet = new ArrayList();
+
+        for(Object n : bt.preOrder()){
+            nodeSet.add(n);
+        }
+        return nodeSet;
     }
 }
