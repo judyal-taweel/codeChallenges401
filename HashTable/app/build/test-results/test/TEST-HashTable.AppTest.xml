@@ -1,12 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="HashTable.AppTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2021-08-13T15:06:55" hostname="THINK1T" time="0.051">
+<testsuite name="HashTable.AppTest" tests="9" skipped="0" failures="0" errors="0" timestamp="2021-08-17T19:41:00" hostname="THINK1T" time="0.039">
   <properties/>
-  <testcase name="testHashMap()" classname="HashTable.AppTest" time="0.045"/>
-  <testcase name="appHasAGreeting()" classname="HashTable.AppTest" time="0.004"/>
-  <system-out><![CDATA[The size is => 4
-The Sally allowance is => 400
-Delete Sally => 400
-The size is => 3
+  <testcase name="test_leftWithSomeJoins()" classname="HashTable.AppTest" time="0.021"/>
+  <testcase name="test_leftBothEmptyHashMap()" classname="HashTable.AppTest" time="0.0"/>
+  <testcase name="testRepeatedWord()" classname="HashTable.AppTest" time="0.001"/>
+  <testcase name="testHashMap()" classname="HashTable.AppTest" time="0.004"/>
+  <testcase name="test_leftWithAllJoins()" classname="HashTable.AppTest" time="0.001"/>
+  <testcase name="testReapeatedWordWithSymbol()" classname="HashTable.AppTest" time="0.001"/>
+  <testcase name="test_leftWithEmptySecondHashMap()" classname="HashTable.AppTest" time="0.001"/>
+  <testcase name="testRepeatedWordRegardlessLowerOrUpperCase()" classname="HashTable.AppTest" time="0.002"/>
+  <testcase name="inseartionTest()" classname="HashTable.AppTest" time="0.002"/>
+  <system-out><![CDATA[Delete Sally => 400
+The size is => 2
 ]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

@@ -5,9 +5,7 @@ import Tree.BinaryTree;
 import Tree.Node;
 import org.checkerframework.checker.units.qual.A;
 
-import java.util.ArrayList;
-import java.util.HashSet;
-import java.util.Objects;
+import java.util.*;
 
 public class HashTable<K,V> {
 
@@ -224,5 +222,19 @@ public class HashTable<K,V> {
             nodeSet.add(n);
         }
         return nodeSet;
+    }
+
+    public List<String> leftJoin(HashMap h1, HashMap h2){
+
+        List<String> list = new ArrayList<>();
+        for(Object k : h1.keySet()){
+            if(h1.containsKey(k)){
+                list.add(k +  ": " + h1.get(k)+ ", " + h2.get(k));
+            } else{
+                list.add(k + ": " + h1.get(k) + ", " + null);
+            }
+        }
+
+        return list;
     }
 }
