@@ -8,6 +8,8 @@ import Tree.Node;
 import com.sun.source.tree.ExpressionTree;
 import com.sun.source.tree.TreeVisitor;
 
+import java.util.HashMap;
+
 public class App {
     public String getGreeting() {
         return "Hello World!";
@@ -48,6 +50,22 @@ public class App {
         binaryTree2.getRoot().getLeft().setLeft(new Node<>(4));
 
         System.out.println(salary.treeIntersection(binaryTree,binaryTree2));
+
+        HashMap<Object, String> synonym  = new HashMap<Object, String>();
+        synonym.put("fond", "enamored");
+        synonym.put("wrath", "anger");
+        synonym.put("diligent", "employed");
+        synonym.put("outift", "garb");
+
+        HashMap<Object, String> antonyms = new HashMap<Object, String>();
+        antonyms.put("fond", "averse");
+        antonyms.put("wrath", "delight");
+        antonyms.put("diligent", "idle");
+        antonyms.put("outift", "follow");
+
+        System.out.println(salary.leftJoin(synonym,antonyms));
+
+
 
     }
 }
