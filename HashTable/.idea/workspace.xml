@@ -4,6 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
+    <list default="true" id="441dcecf-b9c0-4138-b339-de07bed6733b" name="Default Changelist" comment="HashTable challenge30">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     <list default="true" id="441dcecf-b9c0-4138-b339-de07bed6733b" name="Default Changelist" comment="HashTable challenge32">
       <change afterPath="$PROJECT_DIR$/Challenge33.PNG" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/hashmap-left-join.md" afterDir="false" />
@@ -89,7 +91,7 @@
       <command value="gradle test" />
     </option>
   </component>
-  <component name="RunManager" selected="Gradle.HashTable [test]">
+  <component name="RunManager" selected="Application.App">
     <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="App" />
       <module name="HashTable.app.main" />
@@ -103,6 +105,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+
     <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
