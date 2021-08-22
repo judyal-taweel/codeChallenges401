@@ -1,7 +1,11 @@
 package HashTable;
 
-import java.util.ArrayList;
-import java.util.Objects;
+import Tree.BinarySearchTree;
+import Tree.BinaryTree;
+import Tree.Node;
+import org.checkerframework.checker.units.qual.A;
+
+import java.util.*;
 
 public class HashTable<K,V> {
 
@@ -177,5 +181,60 @@ public class HashTable<K,V> {
 
         // key not found
         return null;
+    }
+
+    public String repeatedWord(String target){
+        String repeatedResult = "";
+
+        String[] splitTarget = target.split(" ",-2);
+
+
+        for (int i = 0; i < splitTarget.length; i++) {
+
+            if(get((K) splitTarget[i]) != null || get((K) ((K) splitTarget[i]+",")) != null ){
+                repeatedResult = splitTarget[i];
+                break;
+            }
+            add(((K)splitTarget[i]), (V) splitTarget[i]);
+        }
+        return repeatedResult;
+    }
+
+    public ArrayList treeIntersection(BinaryTree tree1, BinaryTree tree2){
+
+        ArrayList intersection = new ArrayList();
+
+        ArrayList set1 = setTreeToArray(tree1);
+        ArrayList set2 = setTreeToArray(tree2);
+
+        for(Object n : set1){
+            if(set2.contains(n)){
+                intersection.add(n);
+            }
+        }
+        return intersection;
+    }
+
+    public static ArrayList setTreeToArray(BinaryTree bt){
+        ArrayList nodeSet = new ArrayList();
+
+        for(Object n : bt.preOrder()){
+            nodeSet.add(n);
+        }
+        return nodeSet;
+    }
+
+    public List<String> leftJoin(HashMap h1, HashMap h2){
+
+        List<String> list = new ArrayList<>();
+        for(Object k : h1.keySet()){
+            if(h1.containsKey(k)){
+                list.add(k +  ": " + h1.get(k)+ ", " + h2.get(k));
+            } else{
+                list.add(k + ": " + h1.get(k) + ", " + null);
+            }
+        }
+
+        return list;
     }
 }
