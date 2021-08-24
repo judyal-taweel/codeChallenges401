@@ -111,6 +111,50 @@ class AppTest {
     }
 
     @Test
+
+    public void testBusinessTrip(){
+        App app = new App();
+        Graph citiesGraph = new Graph();
+        citiesGraph.addVertex("Pandora");
+        citiesGraph.addVertex("Arendelle");
+        citiesGraph.addVertex("Metroville");
+        citiesGraph.addVertex("Monstroplolis");
+        citiesGraph.addVertex("Narnia");
+        citiesGraph.addVertex("Naboo");
+
+        citiesGraph.addEdge("Pandora","Arendelle",150);
+        citiesGraph.addEdge("Arendelle","Metroville",99);
+        citiesGraph.addEdge("Arendelle","Monstroplolis",42);
+        citiesGraph.addEdge("Metroville","Narnia", 37);
+        citiesGraph.addEdge("Metroville","Pandora", 82);
+        citiesGraph.addEdge("Metroville","Naboo", 26);
+        citiesGraph.addEdge("Monstroplolis","Metroville", 105);
+        citiesGraph.addEdge("Monstroplolis","Naboo", 73);
+        citiesGraph.addEdge("Naboo","Narnia", 250);
+
+        List<String> citiesArr = new ArrayList<>();
+        citiesArr.add("Metroville");
+        citiesArr.add("Pandora");
+
+        List<String> citiesArr2 = new ArrayList<>();
+        citiesArr2.add("Arendelle");
+        citiesArr2.add("Monstroplolis");
+        citiesArr2.add("Naboo");
+
+
+        List<String> citiesArr3 = new ArrayList<>();
+        citiesArr3.add("Naboo");
+        citiesArr3.add("Pandora");
+
+        List<String> citiesArr4 = new ArrayList<>();
+
+        assertEquals(82, app.businessTrip(citiesGraph, citiesArr));
+        assertEquals(115, app.businessTrip(citiesGraph, citiesArr2));
+        assertEquals(0, app.businessTrip(citiesGraph, citiesArr3));
+        assertEquals(0, app.businessTrip(citiesGraph, citiesArr4));
+    }
+
+
     public void testDepthFirstTraverse(){
         App app = new App();
         Graph graph = new Graph();
@@ -154,4 +198,5 @@ class AppTest {
         assertTrue(result.contains(list.get(6)));
         assertTrue(result.contains(list.get(7)));
     }
+
 }
