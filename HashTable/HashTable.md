@@ -14,7 +14,7 @@ V – the type of mapped values
 
 # Approach & Efficiency
 
-Node
+Tree.Node
 Linkedlist
 HashMap
 Arraylist

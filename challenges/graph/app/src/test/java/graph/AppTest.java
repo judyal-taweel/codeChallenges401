@@ -7,6 +7,7 @@ import org.junit.jupiter.api.Test;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Set;
 
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -110,6 +111,7 @@ class AppTest {
     }
 
     @Test
+
     public void testBusinessTrip(){
         App app = new App();
         Graph citiesGraph = new Graph();
@@ -150,6 +152,51 @@ class AppTest {
         assertEquals(115, app.businessTrip(citiesGraph, citiesArr2));
         assertEquals(0, app.businessTrip(citiesGraph, citiesArr3));
         assertEquals(0, app.businessTrip(citiesGraph, citiesArr4));
+    }
+
+
+    public void testDepthFirstTraverse(){
+        App app = new App();
+        Graph graph = new Graph();
+        graph.addVertex("A");
+        graph.addVertex("B");
+        graph.addVertex("C");
+        graph.addVertex("D");
+        graph.addVertex("E");
+        graph.addVertex("F");
+        graph.addVertex("G");
+        graph.addVertex("H");
+
+        graph.addEdge("A","D");
+        graph.addEdge("A","B");
+        graph.addEdge("B","D");
+        graph.addEdge("B","C");
+        graph.addEdge("C","G");
+        graph.addEdge("D","F");
+        graph.addEdge("D","H");
+        graph.addEdge("D","E");
+        graph.addEdge("F","H");
+
+        List<String> list = new ArrayList<>();
+        list.add("A");
+        list.add("B");
+        list.add("C");
+        list.add("G");
+        list.add("D");
+        list.add("E");
+        list.add("H");
+        list.add("F");
+
+        Set<String> result = graph.depthFirstTraverse("A");
+
+        assertTrue(result.contains(list.get(0)));
+        assertTrue(result.contains(list.get(1)));
+        assertTrue(result.contains(list.get(2)));
+        assertTrue(result.contains(list.get(3)));
+        assertTrue(result.contains(list.get(4)));
+        assertTrue(result.contains(list.get(5)));
+        assertTrue(result.contains(list.get(6)));
+        assertTrue(result.contains(list.get(7)));
     }
 
 }
